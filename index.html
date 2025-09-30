@@ -1,1 +1,104 @@
-<h1>Page Bauhaus</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+</head>
+<body>
+<header class="header">
+    <a class="logo" href="home.html"> <img src="imagenes/logo.png" alt="Logo de la Bauhaus"></a>
+        <nav class="menu">
+            <ul>
+                <li><a class="colorazul" href="paginas/historia.html">Historia</a></li>
+                <li><a class="colorazul" href="paginas/artistas.html">Artistas</a></li>
+                <li><a class="colorazul" href="paginas/diciplinas.html">Disciplinas</a></li>
+                <li><a class="colorazul" href="paginas/juego.html">BauMatch</a></li>
+                <li><a class="btngaleria" href="paginas/galeria.html">Galeria</a></li>
+            </ul>
+            </nav>
+            </div>
+</header>
+<main>
+ <section>
+    <div class="marquee-container">
+  <div class="marquee">
+    Bauhaus inspira el diseño moderno · Geometría, arte y funcionalidad · Menos es más · Bauhaus inspira el diseño moderno · Geometría, arte y funcionalidad · Menos es más Bauhaus inspira el diseño moderno · Geometría, arte y funcionalidad · Menos es más 
+  </div>
+  </section>
+    <section class="contenido">
+
+        <div class="titulo">
+            <h1 class="colorrojo">BAU<br>HAUS</h1>
+        <p>Escuela de diseño</p>
+    </div>  
+    <img class="imagen" src="imagenes/edificiobauhaus1.jpg" alt="Imagen de la bauhaus">
+    </section>
+
+    <section id="historia" class="seccion historia">
+        <div class="texto">
+            <h2 class="subtitulos">HISTORIA</h2>
+            <p class="texto"> La Staatliches Bauhaus (Casa de la Construcción Estatal) fue una casa de <span class="negrita">diseño, arte y arquitectura</span> fundada con el <span class="negrita">objetivo</span> de integrar la artesanía con las artes aplicadas, incluyendo la arquitectura y el diseño industrial. La Bauhaus sentó las bases del diseño moderno y del diseño industrial, promoviendo la idea de que <span class="negrita">la forma sigue a la función. </span></p>
+            <a href="paginas/historia.html" class="boton">Ver más</a>
+        </div>
+        </section>
+
+  <section id="filosofia" class="seccion diciplinas colorazul">
+        <div class="texto">
+            <h2 class="subtitulos">FILOSOFÍA</h2>
+            <p >El núcleo de la <span class="negrita">filosofía Bauhaus </span> centraba en el concepto de <span class="negrita">Gesamtkunstwerk</span>, o “obra de arte total”, buscando unificar todas las disciplinas creativas para crear objetos y edificios funcionales y estéticamente agradables en la nueva era industrial. La escuela <span class="negrita">promovía</span> la unión de arte y artesanía,<span class="negrita">eliminando</span> la distinción entre bellas artes y artes aplicadas.</p>
+        </div>
+        </section>
+
+    <section id="artistas" class="seccion artistas circuloamarillo">
+        <div class="texto">
+            <h2 class="subtitulos">ARTISTAS</h2>
+            <img class="imagen" src="imagenes/artistas.jpg" alt="Imagen de artistas de la bauhaus">
+            <p>Detrás de la Bauhaus hubo mentes brillantes que marcaron<span class="negrita">un antes y un después </span> la historia del arte y el diseño. Paul Klee, Wassily Kandinsky, László Moholy-Nagy, Marcel Breuer, entre muchos otros, aportaron su mirada <span class="negrita">innovadora</span> y transformaron la enseñanza artística en una experiencia <span class="negrita">colectiva y revolucionaria</span>. Cada uno dejó una huella propia, pero juntos dieron forma a un <span class="negrita">movimiento</span> que cambió la manera de pensar el arte y la vida.</p>
+            <a href="paginas/artistas.html" class="boton">Ver más</a>
+        </div>
+        </section>
+
+    <section id="diciplinas" class="seccion diciplinas colorazul">
+        <div class="texto">
+            <h2 class="subtitulos">DICIPLINAS</h2>
+            <p >La Bauhaus no fue solo una escuela de arte: fue un<span class="negrita">laboratorio de ideas</span> donde se borraron los límites entre disciplinas. Arquitectos, diseñadores, pintores, escultores y artesanos trabajaban juntos bajo un mismo ideal: <span class="negrita">unir el arte con la vida cotidiana.</span> Desde la tipografía hasta el mobiliario, desde la arquitectura hasta la pintura mural, cada área dialogaba con la otra, creando un lenguaje visual único que aún hoy inspira al diseño contemporáneo.</p>
+            <a href="paginas/diciplinas.html" class="boton">Ver más</a>
+        </div>
+        </section>
+
+    <div class="contact-button" onclick="abrirModal()">
+        <span class="material-symbols-outlined">
+person
+</span>
+</div>
+
+<div id="contactoModal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    
+    <h2 class="titulopagina">Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <a class="boton" type="submit">Enviar</a>
+    </form>
+  </div>
+</div>
+</main>
+  
+    <footer class="footer coloramarillo">
+        <p class="texto">© 2025 | Sitio web sobre la Bauhaus: donde arte y funcionalidad se encuentran.</p>
+    </footer>
+<script src="script/script2.js"></script>
+</body>
+</html>
